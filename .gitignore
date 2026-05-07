@@ -1,10 +1,7 @@
-# On ignore les volumes de données (trop lourds)
 **/data/
+**/vw-data/
+**/letsencrypt/
 **/work/
 **/conf/
 **/db/
-# On ignore les secrets
 .env
-**/letsencrypt/
-!**/movie-site/assets/
-!**/movie-site/index.html
