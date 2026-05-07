@@ -6,4 +6,5 @@ services:
     ports:
       - 8083:80
     volumes:
-      - /home/kilpi/movie-site-assets:/usr/share/nginx/html
+      - ./assets:/usr/share/nginx/html
+networks: {}
