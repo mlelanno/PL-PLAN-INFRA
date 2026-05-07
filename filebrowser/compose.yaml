@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    restart: unless-stopped
+    ports:
+      - 8081:80
+    volumes:
+      - /home/kilpi:/srv
+      - fb-db-v3:/database
+      - fb-config-v3:/config
+volumes:
+  fb-db-v3:
+  fb-config-v3:

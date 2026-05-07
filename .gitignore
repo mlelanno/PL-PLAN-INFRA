@@ -1,0 +1,8 @@
+# On ignore les volumes de données (trop lourds)
+**/data/
+**/work/
+**/conf/
+**/db/
+# On ignore les secrets
+.env
+**/letsencrypt/

@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  adguardhome:
+    image: adguard/adguardhome:latest
+    container_name: adguard
+    restart: unless-stopped
+    ports:
+      - 53:53/tcp
+      - 53:53/udp
+      - 3001:3000/tcp   # Décalé pour esquiver Open WebUI (3000)
+      - 8084:80/tcp     # Décalé pour esquiver cine.geogacha.com (8083)
+    volumes:
+      - ./work:/opt/adguardhome/work
+      - ./conf:/opt/adguardhome/conf

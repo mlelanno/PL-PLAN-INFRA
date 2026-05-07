@@ -1,0 +1,9 @@
+services:
+  homer:
+    image: b4bz/homer:latest
+    container_name: homer
+    restart: unless-stopped
+    ports:
+      - 8082:8080
+    volumes:
+      - /home/kilpi/homer-assets:/www/assets
