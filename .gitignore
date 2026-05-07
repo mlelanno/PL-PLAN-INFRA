@@ -6,3 +6,5 @@
 # On ignore les secrets
 .env
 **/letsencrypt/
+!**/movie-site/assets/
+!**/movie-site/index.html
